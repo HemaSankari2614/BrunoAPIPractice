@@ -1,0 +1,24 @@
+meta {
+  name: Update Student
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:5276/api/Students/1
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "Hema Updated",
+    "college": "Jayaraj Annapackiam",
+    "department": "ECE"
+  }
+}
