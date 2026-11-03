@@ -1,0 +1,23 @@
+meta {
+  name: Add Student
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5276/api/Students
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Hema",
+    "college": "Jayaraj Annapackiam",
+    "department": "ECE"
+  }
+}
